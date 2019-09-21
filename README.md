@@ -1,23 +1,11 @@
-# keyword-canibalization
-This script will help you find if you have a problem with keyword cannibalization. 
+# Kanibalizace klíčových slov
+Tento skript vám pomůže identifikovat, jestli máte na webu problém s kanibalizací klíčových slov. Vycházím z předpokladu, že jakmile v SERPu rankují dvě různé vstupní stránky na jedno klíčové slovo, tak jde o kanibalizaci. Výsledkem je tedy následující export:
 
-It's R script which downloads data from performance report (keyword + URL) from GSC and tries to find the same keyword with distinct URL, which is called keyword cannibalization. 
+![Output of script in OpenRefine](https://github.com/zatkoma/keyword-cannibalization/blob/master/output-keyword-cannibalization.png?raw=true)
 
-After running this script you will see this report:
-
-
-| Keyword       | URL          | Clicks | CTR | Position | Percent |
-| ------------- |:-------------:| -----:| -----:| -----:| -----:|
-| A | example.com/a | 261 | 2,7 | 1,047 | 72,3% |
-| A | example.com/ab | 43 | 0,6 | 2,124 | 11,9% |
-| A | example.com/ac | 27 | 0,3 | 3,181 | 7,48% |
-|...|...|...|...|...|...|
-
-
-
-## What do I need?
+## Co budete potřebovat?
 
 - R and R studio
+- package: googleAuthR
 - package: searchConsoleR
 - package: tidyverse
-- package: googleAuthR
