@@ -9,3 +9,7 @@ Tento skript vám pomůže identifikovat, jestli máte na webu problém s kaniba
 - package: googleAuthR
 - package: searchConsoleR
 - package: tidyverse
+
+## Poděkování
+
+Musím ještě vyslat jedno poděkování směrem k návodu: https://www.gokam.co.uk/seo-cannibalization-r/. Tento návod jsem vzal a rozšířil o pár mnou postrádaných funkcí, jako je například filtrace pouze na problematické stránky, srovnávání dle impresí, začištění výstupu a úprava pro lehčí použití / prohlížení v OR. 
